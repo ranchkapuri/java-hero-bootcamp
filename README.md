@@ -1,1 +1,1 @@
-# java-hero-bootcamp
+# Example Git Project
