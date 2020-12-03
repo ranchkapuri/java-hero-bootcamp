@@ -1,0 +1,192 @@
+body {
+	  background-color: RGB(73, 18, 246);
+	  font-family: Arial;
+	  color: white;
+
+} 
+
+a {
+	  color: white;
+	  text-decoration: none;  
+}
+
+a:hover {
+	  text-decoration: underline;
+}
+
+input[type='button'] {
+      border: 0px;
+      border-radius: 25px;
+      color: white;
+      font-weight: bold;
+      padding:  10px 25px;	
+	  background: linear-gradient(to right, RGB(234, 158, 61) , RGB(238, 125, 56));
+}
+
+h1 {
+	font-size: 40px;
+}
+
+
+h2 {
+	font-size: 30px;
+	font-weight: normal;
+}
+
+.container {
+	margin-left: 20px;
+
+}
+
+.header {
+	  display: flex;
+      align-items: center;
+
+}
+
+.section-1 {
+      display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  padding-top: 50px;
+}
+
+.copy-1 {
+	  flex: 0 0 450px;
+	  color: RGB(201, 184, 252);
+	  z-index: 1;
+	  margin-right: -69px;
+	  margin-top: 45px;
+	
+}
+
+/*
+.copy-1 >  h1 {
+	font-size: 40px;
+}
+*/
+
+.picture-1 {
+	  flex: 0 1 900px;
+	  z-index: 0;
+}
+
+.section-2 {
+      display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  padding-top: 50px;
+}
+
+.patented-tech {
+	  flex: 0 1 500px;
+	  margin-right: 50px;
+}
+
+.brain-and-behavior {
+	  flex: 0 1 400px;
+}
+
+.section-3 {
+      display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  padding-top: 10px;      
+}
+.placibo-effect {
+	  flex: 0 1 500px;
+      padding-left: 400px;
+	  margin-right: -120px; 
+}
+
+.placibo-text {
+	  flex: 0 1 400px;
+	  padding-right: 300px;
+}
+
+.footer-container {
+	display: flex;
+    align-items: center;	
+	background-color: rgb(77,15,213);
+    color: white;
+}
+
+.column-1{
+	  display: flex;
+	  align-items: center;
+	  flex-direction: column;
+	  justify-content: center;
+      padding-bottom: 160px;
+	  
+
+}
+
+.column-1-1{
+	font-size: 30px;
+	opacity: 0.8;
+}
+
+footer {
+	
+	margin-top: 60px; 
+	margin-left: -8px; 
+	margin-right: -8px; 
+	margin-bottom: -8px
+}
+
+#facebook {
+	padding-right: 20px;
+}
+
+#twitter-instagram{
+	padding-right: 27px;
+}
+
+.column-2 p {
+	font-size: 20px; 
+	font-family: sans-serif;
+	font-weight:bold;
+}
+
+.column-3 p {
+     font-size: 20px; 
+	font-family: sans-serif;
+	font-weight:bold;
+}
+
+.learn {
+	padding-bottom: 20px; 
+	opacity: 0.8;
+	font-weight:bold;
+}
+
+.more {
+	padding-bottom: 63px; 
+	opacity: 0.8;
+	font-weight:bold;
+}
+
+.resources {
+	font-size: 20px; 
+	font-family: sans-serif;
+	font-weight:bold;
+}
+
+.column-1 p {
+	font-size: 12px; 
+	font-family: sans-serif; 
+	padding-right: 48px; 
+	opacity: 0.8;"
+}
+
+.column-1 img {
+	width:35px;
+	height:45px; 
+	padding-right: 120px;"
+}
+
+.apple-android {
+	font-size: 30px; 
+	padding-bottom: 85px; 
+	opacity: 0.8;
+}
