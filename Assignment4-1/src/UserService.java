@@ -27,10 +27,10 @@ public User[] getAllUsers()	{
 			
 		
 			User usr= new User();
-			if (NORMAL_ROLE.equals(string1[3])){
+			if (NORMAL_ROLE.equals(string1[3].trim())){
 				normalUser= new NormalUser(string1[0],string1[1],string1[2],string1[3]);
 				arrayUser[i]=normalUser;
-			} else if (SUPER_ROLE.equals(string1[3])) {
+			} else if (SUPER_ROLE.equals(string1[3].trim())) {
 				superUser= new SuperUser(string1[0],string1[1],string1[2],string1[3]);
 				arrayUser[i]=superUser;
 			}
@@ -40,7 +40,7 @@ public User[] getAllUsers()	{
 		}
 		bufferedReader.close();
 	} catch (Exception ex) {
-		System.out.println("Oops Somehting is wrong reading the text file");
+		System.out.println("Oops Something is wrong reading the text file");
 		ex.printStackTrace();
 	}
 	
