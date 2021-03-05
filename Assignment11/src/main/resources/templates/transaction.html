@@ -1,0 +1,26 @@
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<title>Online Bank</title>
+<link rel="stylesheet" href="/css/transactions.css" />
+</head>
+<body>
+
+	<div>
+		<th:block th:if="${txn.type eq 'D'}">
+			<h2>Transaction ID: [[${txn.id}]] (Debit)</h2>
+		</th:block>
+		<th:block th:unless="${txn.type eq 'D'}">
+			<h2>Transaction ID: [[${txn.id}]] (Credit)</h2>
+		</th:block>
+	</div>
+
+	<div th:inline="text">Date: [[${txn.date}]]</div>
+	<div th:inline="text">Amount: [[${txn.amount}]]</div>
+	<div th:inline="text">Description: [[${txn.description}]]</div>
+	<div>
+		<a href="/transactions">back </a>
+	</div>
+
+
+</body>
+</html>

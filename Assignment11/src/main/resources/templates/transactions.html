@@ -1,0 +1,33 @@
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<title>Online Bank</title>
+<link rel="stylesheet" href="/css/transactions.css" />
+</head>
+<body>
+
+
+	<h2>Transaction History</h2>
+
+	<table>
+		<tr>
+			<th>ID</th>
+			<th>Date</th>
+			<th>Retailer</th>
+			<th>Amount</th>
+			<th>Type</th>
+		</tr>
+
+		<tr th:each="bankTransaction : ${transactions}">
+			<td><a
+				th:href="@{/transactions/{dogPoop}(dogPoop=${bankTransaction.id})}">[[${bankTransaction.id}]]</a></td>
+			<td>[[${bankTransaction.date}]]</td>
+			<td>[[${bankTransaction.retailer}]]</td>
+			<td>[[${bankTransaction.amount}]]</td>
+			<td>[[${bankTransaction.type}]]</td>
+		</tr>
+
+	</table>
+
+
+</body>
+</html>
